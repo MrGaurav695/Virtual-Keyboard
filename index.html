@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Virtual Keyboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="app" role="application" aria-label="Virtual keyboard application">
+    <header>
+      <div class="logo">VK</div>
+      <div>
+        <h1>Virtual Keyboard</h1>
+        <p class="lead">Click keys or use your physical keyboard — watch letters appear and hear a click!</p>
+      </div>
+    </header>
+
+    <section class="display-panel" aria-live="polite">
+      <div id="typed" class="typed" tabindex="0" aria-label="Typed text area" spellcheck="false"></div>
+
+      <div class="controls">
+        <button id="clearBtn" class="btn" title="Clear typed text">Clear</button>
+        <button id="copyBtn" class="btn" title="Copy typed text">Copy</button>
+        <div style="flex:1"></div>
+        <div class="meta">Sound: <span id="soundState">On</span></div>
+        <button id="toggleSound" class="btn" title="Toggle key sound">Toggle Sound</button>
+      </div>
+    </section>
+
+    <section class="kbd" aria-hidden="false">
+      <!-- Row 1 -->
+      <div class="row" id="row1"></div>
+      <!-- Row 2 -->
+      <div class="row" id="row2"></div>
+      <!-- Row 3 -->
+      <div class="row" id="row3"></div>
+      <!-- Row 4 -->
+      <div class="row" id="row4"></div>
+      <!-- Row 5 -->
+      <div class="row" id="row5"></div>
+    </section>
+    <button class="theme-toggle">🌙</button>
+    <footer>Made By Gaurav</footer>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
